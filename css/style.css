@@ -42,10 +42,51 @@
 
 body {
   background-color: var(--color-light);
+  color: var(--color-green);
 }
 
 a {
   text-decoration: none;
+}
+
+.section-title {
+  text-align: center;
+  margin: 1rem 0;
+  position: relative;
+}
+
+.section-title::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  background: var(--color-orange);
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 5px;
+  background: var(--color-green);
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 34%);
+  -webkit-transform: translate(-50%, 34%);
+  -moz-transform: translate(-50%, 34%);
+  -ms-transform: translate(-50%, 34%);
+  -o-transform: translate(-50%, 34%);
+}
+
+.container {
+  padding: 0 2rem;
 }
 
 /* navbar */
