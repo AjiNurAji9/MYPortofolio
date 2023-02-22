@@ -43,7 +43,6 @@
 body {
   background-color: var(--color-light);
   color: var(--color-green);
-  height: 1000vh;
 }
 
 a {
@@ -87,7 +86,11 @@ a {
 }
 
 .container {
-  padding: 0 2rem;
+  padding: 5rem 2rem;
+}
+
+.color-orange {
+  color: var(--color-orange);
 }
 
 /* navbar */
@@ -201,6 +204,7 @@ header .navbar {
 }
 
 #home .text .btn {
+  font-size: 13px;
   margin-top: 10px;
   padding: 5px 10px;
   border-radius: 20px 0 20px 0;
@@ -259,6 +263,52 @@ header .navbar {
   -o-transform: scale(0.9);
 }
 
+/* About me styling */
+.biodata {
+  margin-top: 50px;
+}
+
+.profile {
+  display: block;
+  align-items: center;
+  text-align: center;
+}
+
+.profile .img-profile {
+  width: 60%;
+  border: 5px solid var(--color-green);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.profile .data-profile h3 {
+  text-transform: uppercase;
+}
+
+.profile .data-profile .other-data {
+  text-align: justify;
+  margin-top: 20px;
+}
+
+.profile .data-profile .other-data ul li {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.profile .data-profile .other-data ul li span {
+  font-weight: normal;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
 /* Responsive landscape tablet and large phone*/
 @media screen and (min-width: 600px) {
   header .navbar {
@@ -267,24 +317,50 @@ header .navbar {
     padding: 10px 50px;
   }
 
-  #home .text p,
   .logo h1 a {
-    font-size: 25px;
+    font-size: 30px;
+  }
+  
+  #home .text p,
+  .nav-links .nav-items .links a {
+    font-size: 20px;
   }
 
-  .nav-links .nav-items .links a {
+  #home .text .btn {
     font-size: 15px;
+  }
+
+  .container {
+    margin: 4rem 0;
   }
 }
 
 /* Responsive dekstop */
 @media screen and (min-width: 768px) {
-  #home .text p,
   .logo h1 a {
+    font-size: 35px;
+  }
+  
+  #home .text p,
+  .nav-links .nav-items .links a {
+    font-size: 25px;
+  }
+
+  .section-title {
     font-size: 30px;
   }
 
-  .nav-links .nav-items .links a {
+  #home .text .btn {
     font-size: 20px;
+  }
+
+  .section-title::before {
+    width: 70px;
+    height: 3px;
+  }
+
+  .section-title::after {
+    width: 15px;
+    height: 7px;
   }
 }

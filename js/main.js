@@ -1,8 +1,8 @@
 // Change background color when scrolled
-var navBar = document.getElementById("header");
-var btn = document.getElementById("btn");
+const navBar = document.getElementById("header");
+const btn = document.getElementById("btn");
 window.onscroll = () => {
-  if (window.scrollY >= 100) {
+  if (window.scrollY >= 50) {
     navBar.classList.remove("nav-transparent");
     navBar.classList.add("nav-colored");
     btn.classList.add("btn-green");
@@ -16,6 +16,6 @@ window.onscroll = () => {
 }
 
 // Nama user / pendatang (pengguna) website
-// var ask = prompt("Hai, nama kamu siapa?");
-var user = document.getElementById("user");
+// const ask = prompt("Hai, nama kamu siapa?");
+const user = document.getElementById("user");
 user.innerHTML = ask;
