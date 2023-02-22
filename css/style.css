@@ -13,7 +13,7 @@
   --color-orange: #d2601a;
   --color-green: #1d3c45;
   --color-white: #fbfbfa;
-  --color-light: #fff1e1;
+  --color-light: #fff7d1;
 }
 
 /* Scrollbar */
@@ -43,6 +43,7 @@
 body {
   background-color: var(--color-light);
   color: var(--color-green);
+  height: 1000vh;
 }
 
 a {
@@ -95,6 +96,7 @@ header {
   width: 100%;
   height: auto;
   top: 0;
+  z-index: 100;
 }
 
 .nav-colored {
@@ -188,7 +190,7 @@ header .navbar {
   justify-content: center;
   align-items: center;
   height: inherit;
-  color: var(--color-white);
+  color: var(--color-light);
   background: linear-gradient(to bottom, #fff1e170, transparent);
   padding: 0 30px;
 }
