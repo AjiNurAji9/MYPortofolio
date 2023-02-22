@@ -249,7 +249,7 @@ header .navbar {
   align-items: center;
   height: inherit;
   color: var(--color-light);
-  background: linear-gradient(to bottom, #fff1e170, transparent);
+  background: linear-gradient(to bottom, #fff7e150, transparent);
   padding: 0 30px;
 }
 
