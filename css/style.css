@@ -86,11 +86,21 @@ a {
 }
 
 .container {
-  padding: 4rem 2rem;
+  padding: 5rem 2rem;
 }
 
-.color-orange {
+.color-orange,
+.color-orange-link {
   color: var(--color-orange);
+  transition: color .3s ease-in-out;
+  -webkit-transition: color .3s ease-in-out;
+  -moz-transition: color .3s ease-in-out;
+  -ms-transition: color .3s ease-in-out;
+  -o-transition: color .3s ease-in-out;
+}
+
+.color-orange-link:hover {
+  color: var(--color-green);
 }
 
 .btn {
@@ -259,56 +269,50 @@ header .navbar {
 }
 
 /* About me styling */
+#about-me {
+  height: auto;
+}
+
 .biodata {
-  margin-top: 35px;
+  margin-top: 3rem;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+}
+
+.biodata .img {
+  display: flex;
+  width: 100%;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.biodata .left h1 {
-  font-size: 15px;
-  color: var(--color-orange);
+.biodata .img img {
+  width: 200px;
+  border: 5px solid var(--color-green);
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
 }
 
-.biodata .left h1 .me {
-  display: block;
-  font-size: 30px;
+.biodata .img h1 {
   text-transform: uppercase;
-  color: var(--color-green);
-  font-family: Rowdies, cursive;
+  margin-top: 10px;
 }
 
-.biodata .left h2 {
-  font-size: 15px;
+.biodata .img p {
   color: var(--color-gray);
 }
 
-.biodata .left h2 span {
-  color: var(--color-green);
+.biodata .description {
+  margin: 1rem 0;
 }
 
-.biodata .left p {
-  margin-bottom: 10px;
-}
-
-.biodata .right {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: 2rem auto;
-}
-
-.biodata .right img {
-  width: 300px;
-  border: 10px solid var(--color-green);
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+.biodata .description p {
+  text-align: justify;
+  margin: 1rem 0;
 }
 
 /* Responsive landscape tablet and large phone*/
@@ -334,16 +338,7 @@ header .navbar {
   }
 
   .container {
-    margin: 4rem 0;
-  }
-
-  .biodata .left h1 {
-    font-size: 17px;
-  }
-
-  .biodata .right {
-    margin-top: 0;
-    right: 0;
+    padding: 4rem;
   }
 }
 
@@ -375,5 +370,13 @@ header .navbar {
   .section-title::after {
     width: 15px;
     height: 7px;
+  }
+
+  .biodata {
+    flex-wrap: nowrap;
+  }
+
+  .biodata .img {
+    margin: 0 2rem;
   }
 }
