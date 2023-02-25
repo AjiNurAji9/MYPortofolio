@@ -16,6 +16,6 @@ window.onscroll = () => {
 }
 
 // Nama user / pendatang (pengguna) website
-// const ask = prompt("Hai, nama kamu siapa?");
+const ask = prompt("Tak kenal maka tak sayang, udah kenal malah diambil orang. Btw namanya siapa?");
 const user = document.getElementById("user");
 user.innerHTML = ask;
