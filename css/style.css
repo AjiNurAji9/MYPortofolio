@@ -340,10 +340,13 @@ header .navbar {
 
 .contact-me .me .card {
   background-color: #6b728040;
+  display: flex;
   padding: 10px;
   margin: 5px;
   width: 100%;
   text-align: center;
+  justify-content: start;
+  align-items: center;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -353,11 +356,12 @@ header .navbar {
 
 .card .icon {
   padding: 10px 0;
-  font-size: 20px;
+  font-size: 25px;
+  margin: 0 20px;
+  color: var(--color-secondary);
 }
 
 .card p {
-  text-align: center !important;
   margin: 5px 0;
   color: var(--color-gray);
 }
@@ -405,6 +409,7 @@ form .form-group {
   align-items: center;
   border-radius: 50%;
   color: var(--color-primary);
+  background: var(--color-secondary);
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
