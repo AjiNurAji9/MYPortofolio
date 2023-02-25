@@ -13,9 +13,9 @@ window.onscroll = () => {
     btn.classList.remove("btn-green");
     btn.classList.add("btn-orange");
   }
-}
+};
 
 // Nama user / pendatang (pengguna) website
-const ask = prompt("Tak kenal maka tak sayang, udah kenal malah diambil orang. Btw namanya siapa?");
+// const ask = prompt("Tak kenal maka tak sayang, udah kenal malah diambil orang. Btw namanya siapa?");
 const user = document.getElementById("user");
 user.innerHTML = ask;

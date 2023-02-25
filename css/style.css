@@ -10,20 +10,20 @@
 
 /* Varibel */
 :root {
-  --color-orange: #d2601a;
-  --color-green: #1d3c45;
+  --color-secondary: #d2601a;
+  --color-primary: #1d3c45;
   --color-gray: #6b7280;
   --color-light: #fff7ed;
 }
 
 /* Scrollbar */
 ::-webkit-scrollbar {
-  background-color: var(--color-orange);
+  background-color: var(--color-secondary);
   width: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--color-green);
+  background-color: var(--color-primary);
   background-clip: content-box;
   border-radius: 100px;
   -webkit-border-radius: 100px;
@@ -42,7 +42,8 @@
 
 body {
   background-color: var(--color-light);
-  color: var(--color-green);
+  color: var(--color-primary);
+  font-size: 15px;
 }
 
 a {
@@ -60,7 +61,7 @@ a {
   position: absolute;
   width: 50px;
   height: 2px;
-  background: var(--color-orange);
+  background: var(--color-secondary);
   left: 50%;
   bottom: 0;
   transform: translateX(-50%);
@@ -75,7 +76,7 @@ a {
   position: absolute;
   width: 10px;
   height: 5px;
-  background: var(--color-green);
+  background: var(--color-primary);
   left: 50%;
   bottom: 0;
   transform: translate(-50%, 34%);
@@ -87,20 +88,21 @@ a {
 
 .container {
   padding: 5rem 2rem;
+  padding-bottom: 1rem;
 }
 
 .color-orange,
 .color-orange-link {
-  color: var(--color-orange);
-  transition: color .3s ease-in-out;
-  -webkit-transition: color .3s ease-in-out;
-  -moz-transition: color .3s ease-in-out;
-  -ms-transition: color .3s ease-in-out;
-  -o-transition: color .3s ease-in-out;
+  color: var(--color-secondary);
+  transition: color 0.3s ease-in-out;
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -ms-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
 }
 
 .color-orange-link:hover {
-  color: var(--color-green);
+  color: var(--color-primary);
 }
 
 .btn {
@@ -141,6 +143,7 @@ a {
 }
 
 .btn:hover {
+  letter-spacing: 2px;
   transform: scale(0.9);
   -webkit-transform: scale(0.9);
   -moz-transform: scale(0.9);
@@ -150,12 +153,12 @@ a {
 
 .btn-green,
 .btn-orange:hover {
-  background-color: var(--color-green);
+  background-color: var(--color-primary);
 }
 
 .btn-orange,
 .btn-green:hover {
-  background-color: var(--color-orange);
+  background-color: var(--color-secondary);
 }
 
 /* navbar */
@@ -182,11 +185,11 @@ header {
 }
 
 .nav-transparent .logo h1 a {
-  color: var(--color-green);
+  color: var(--color-primary);
 }
 
 .nav-transparent .logo h1 small {
-  color: var(--color-orange);
+  color: var(--color-secondary);
 }
 
 header .navbar {
@@ -199,7 +202,7 @@ header .navbar {
 
 .logo h1 a {
   font-family: Rowdies, cursive;
-  color: var(--color-green);
+  color: var(--color-primary);
   font-size: 25px;
   transition: color 0.3s linear;
   -webkit-transition: color 0.3s linear;
@@ -209,7 +212,7 @@ header .navbar {
 }
 
 .logo h1 small {
-  color: var(--color-orange);
+  color: var(--color-secondary);
   opacity: 0.8;
 }
 
@@ -220,11 +223,11 @@ header .navbar {
 
 .nav-links .nav-items .links {
   list-style: none;
-  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .nav-links .nav-items .links a {
-  color: var(--color-green);
+  color: var(--color-primary);
   font-weight: 600;
   font-size: 15px;
   transition: color 0.3s linear;
@@ -235,7 +238,7 @@ header .navbar {
 }
 
 .nav-links .nav-items .links a:hover {
-  color: var(--color-orange);
+  color: var(--color-secondary);
 }
 
 /* Home section styling */
@@ -289,7 +292,7 @@ header .navbar {
 
 .biodata .img img {
   width: 200px;
-  border: 5px solid var(--color-green);
+  border: 5px solid var(--color-primary);
   border-radius: 15px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
@@ -315,12 +318,140 @@ header .navbar {
   margin: 1rem 0;
 }
 
+/* Contatc styling */
+.container.bg-green {
+  background-color: var(--color-primary);
+  color: var(--color-light);
+}
+
+.container.bg-green .section-title::after {
+  background-color: var(--color-gray);
+}
+
+.contact-me {
+  margin-top: 2rem;
+}
+
+.contact-me .me {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.contact-me .me .card {
+  background-color: #6b728040;
+  padding: 10px;
+  margin: 5px;
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.card .icon {
+  padding: 10px 0;
+  font-size: 20px;
+}
+
+.card p {
+  text-align: center !important;
+  margin: 5px 0;
+  color: var(--color-gray);
+}
+
+.contact-me p {
+  text-align: justify;
+}
+
+.contact-me form {
+  margin-top: 20px;
+}
+
+form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group .input {
+  margin: 5px 0;
+  padding: 5px 10px;
+  outline: none;
+  resize: none;
+  border: none;
+  color: var(--color-light);
+  background-color: #6b728040;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.form-group-btn {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 5px;
+}
+
+.form-group-btn .btn {
+  border: none;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: var(--color-primary);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.form-group-btn .btn i {
+  transition: transform 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out;
+  -moz-transition: transform 0.3s ease-in-out;
+  -ms-transition: transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+}
+
+.form-group-btn .btn:hover {
+  border-radius: 10px;
+  background-color: var(--color-gray);
+  color: var(--color-light);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transform: rotate(50deg);
+  -webkit-transform: rotate(50deg);
+  -moz-transform: rotate(50deg);
+  -ms-transform: rotate(50deg);
+  -o-transform: rotate(50deg);
+}
+
+.form-group-btn .btn:hover i {
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+}
+
 /* Responsive landscape tablet and large phone*/
 @media screen and (min-width: 600px) {
   header .navbar {
     display: flex;
     justify-content: space-between;
     padding: 10px 50px;
+  }
+
+  .nav-links .nav-items .links {
+    margin-left: 20px;
   }
 
   .biodata .left h1 .me,
@@ -340,10 +471,20 @@ header .navbar {
   .container {
     padding: 4rem;
   }
+
+  .contact-me .me {
+    flex-wrap: nowrap;
+  }
 }
 
 /* Responsive dekstop */
 @media screen and (min-width: 768px) {
+  body,
+  .form-group .input,
+  .form-group-btn .btn i {
+    font-size: 20px;
+  }
+
   .biodata .left h1 span,
   .logo h1 a {
     font-size: 35px;
@@ -378,5 +519,18 @@ header .navbar {
 
   .biodata .img {
     margin: 0 2rem;
+  }
+
+  .biodata .img p {
+    text-align: center;
+  }
+
+  .form-group-btn .btn {
+    width: 50px;
+    height: 50px;
+  }
+
+  .card p {
+    font-size: 16px;
   }
 }
