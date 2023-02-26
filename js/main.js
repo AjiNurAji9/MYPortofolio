@@ -7,6 +7,7 @@ window.onscroll = () => {
     navBar.classList.add("nav-colored");
     btn.classList.add("btn-green");
     btn.classList.remove("btn-orange");
+    showToast();
   } else {
     navBar.classList.add("nav-transparent");
     navBar.classList.remove("nav-colored");
@@ -15,7 +16,7 @@ window.onscroll = () => {
   }
 };
 
-// Nama user / pendatang (pengguna) website
-// const ask = prompt("Tak kenal maka tak sayang, udah kenal malah diambil orang. Btw namanya siapa?");
-const user = document.getElementById("user");
-user.innerHTML = ask;
+// get years
+const years = new Date().getFullYear();
+const copyright = document.getElementById("years");
+copyright.innerHTML = years;
