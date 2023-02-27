@@ -15,3 +15,19 @@ function getUser() {
     alertify.error("Isi dulu dong !");
   }
 }
+
+// Send message to email
+function send() {
+  const name = document.getElementById("fullName");
+  const email = document.getElementById("email");
+  const msg = document.getElementById("message");
+  if (name.value.length <= 0) {
+    alertify.error("Isi namanya dong!!");
+  } else if (email.value.length <= 0) {
+    alertify.error("Isi emailnya dong!!");
+  } else if (msg.value.length <= 0) {
+    alertify.error("Isi pesannya dong!!");
+  } else {
+    alertify.success("Sudah terkirim, terimakasih 👍")
+  }
+}
