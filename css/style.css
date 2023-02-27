@@ -170,6 +170,7 @@ a {
   justify-content: center;
   align-items: center;
   z-index: 110;
+  backdrop-filter: blur(15px);
 }
 
 .alert .box {
