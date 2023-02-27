@@ -194,12 +194,10 @@ a {
 
 .alert .box .form {
   max-width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
 }
 
 .alert .box .form input {
-  grid-column: 1 / 2;
   padding: 5px 8px;
   border: 2px solid var(--color-primary);
   border-radius: 25px;
@@ -219,7 +217,6 @@ a {
 }
 
 .alert .box .form button {
-  grid-column: 2 / 2;
   margin-top: 0;
   margin-left: 5px;
   padding: 5px 8px;
