@@ -17,6 +17,9 @@
       <li>
         <a href="https://fontawesome.com/">FontAwasome</a>
       </li>
+      <li>
+        <a href="https://alertifyjs.com/">Alertify</a>
+      </li>
     </ol>
   </ul>
 </p>

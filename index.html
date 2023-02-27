@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MYPortofolio</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
+
+    <title>MYPortofolio - Aji Nur Aji</title>
 
     <!-- myCSS -->
     <link rel="stylesheet" href="css/style.css" />
@@ -15,10 +19,26 @@
       crossorigin="anonymous"
     ></script>
 
-    <!-- sweetalert -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- alertify -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/bootstrap.min.css"/>
   </head>
   <body>
+
+    <!-- alert srart -->
+    <div class="alert" id="alert">
+      <div class="box">
+        <h3 class="title">
+          Tak kenal maka tak sayang, makanya kenalan dulu.
+        </h3>
+        <div class="form">
+          <input type="text" name="nama" id="nama" placeholder="Nama kamu" required>
+          <button type="submit" class="btn btn-orange" onclick="getUser()">Haloo!!</button>
+        </div>
+      </div>
+    </div>
+    <!-- alert end -->
+
     <!-- navbar start -->
     <header class="nav-transparent" id="header">
       <div class="navbar">
@@ -52,7 +72,7 @@
       <div class="bg-img">
         <div class="text">
           <p>
-            Hii semuanya 👋, selamat datatang di MYPortofolio.
+            Hii <span id="user"></span> 👋, <span>selamat datatang di MYPortofolio.</span>
           </p>
           <a href="#about-me" class="btn btn-orange" id="btn"
             >Baca tentang saya <i class="fa-solid fa-arrow-right" id="icon"></i
@@ -134,7 +154,7 @@
               kirim pesan dibawah sini atau hubungi melalui nomor dan email
               saya.
             </p>
-            <form action="" method="post">
+            <form action="https://formspree.io/f/mayzjnew" method="post">
               <div class="form-group">
                 <input
                   type="text"
@@ -196,5 +216,9 @@
 
     <!-- myJS -->
     <script src="js/main.js"></script>
+    <script src="js/date.js"></script>
+    <script src="js/alert.js"></script>
+
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
   </body>
 </html>
