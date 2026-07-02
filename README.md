@@ -1,30 +1,17 @@
-# MYPortofolio
-<p>Web MYPortofolio adalah sebuah website biodata saya yang dibuat untuk memenuhi tugas PWPB di sekolah.</p>
-<p>Web ini diibuat menggunakan : <p>
-<p>
-  <ul>
-    <li>Language / Bahasa</li>
-    <ol type="1">
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-    </ol>
-    <li>Plugins / Framework</li>
-    <ol type="1">
-      <li>
-        <a href="https://fonts.google.com/">Google Font</a>
-      </li>
-      <li>
-        <a href="https://fontawesome.com/">FontAwasome</a>
-      </li>
-      <li>
-        <a href="https://alertifyjs.com/">Alertify</a>
-      </li>
-    </ol>
-  </ul>
-</p>
+## Project Overview
+**My Portfolio v2** is a personal portfolio website project that I built back when I was a vocational high school (SMK) student. This project served as an interactive platform to introduce myself, showcase my skills, and provide a clean interface for visitors to get in touch with me.
 
-<p>Social media :</p>
-<p>
-  <a href="https://instagram.com/ajnrji_">Instagram</a>
-</p>
+The website features a minimalist layout with a prominent hero section that greets visitors personally, guiding them seamlessly through my early journey in tech.
+
+### Key Features
+* **Personalized Hero Section:** Welcomes visitors with a friendly greeting and a direct call-to-action button to learn more about me.
+* **Clean Navigation:** Quick and intuitive links to the *Home*, *About Me*, and *Contact* sections.
+* **Responsive Layout:** A clean design optimized for essential viewing experiences.
+
+### Tech Stack
+This project was built using foundational web development technologies to ensure lightweight performance and clean code structure:
+* **HTML5** – For structuring the web pages and semantic content.
+* **CSS3** – For styling, layout management, and creating a modern visual aesthetic.
+* **JavaScript** – For handling basic client-side interactivity.
+
+---
